@@ -14,3 +14,4 @@ agent_client_collector_check_allow_list_file_path: |-
   {%- else -%}
   {{- ('/', 'etc', 'servicenow', 'agent-client-collector', 'check-allow-list.json') | ansible.builtin.path_join -}}
   {%- endif -%}
+agent_client_collector_disable_gpg_check: "false"
